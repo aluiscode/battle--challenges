@@ -1,4 +1,4 @@
-import { IPlugin } from "./plugins/IPlugin.ts";
+import { IPlugin } from "./plugins/IPlugin";
 
 type Config = {
   end: number,

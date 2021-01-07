@@ -1,9 +1,7 @@
-import { Music } from './Music.ts';
-import { ChallengePrinter } from './plugins/ChallengePrinter.ts';
+import { Music } from './Music';
+import { ChallengePrinter } from './plugins/ChallengePrinter';
 
 const music = new Music({
   end: 100,
   plugins: [new ChallengePrinter()]
 });
-
-

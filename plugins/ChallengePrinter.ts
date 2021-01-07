@@ -1,4 +1,4 @@
-import { IPlugin } from './IPlugin.ts';
+import { IPlugin } from './IPlugin';
 
 export class ChallengePrinter implements IPlugin{
   private relations = new Map();
