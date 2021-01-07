@@ -9,12 +9,20 @@ export class ChallengePrinter implements IPlugin{
     this.relations.set(10, 'TI');
   }
 
+  /**
+   * @param arr Array in wich will be applied the
+   * challenge
+   */
   public run(arr: Array<number>): void{
     arr.map( n => {
       console.log(this.eulerFizzBuzz(n));
     });
   }
 
+  /**
+   * The approach is getting since https://blog.antfeedr.com/posts/fizzbuzz.html
+   * @param n is the value of the array in each iteration
+   */
   public eulerFizzBuzz (n: number): number | string{
     const eulerFizzBuzz:number = n**4 % 15;
     if(eulerFizzBuzz === 1){

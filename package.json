@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "build": "ts-node index.ts",
     "start": "ts-node index.ts",
     "test": "jest",
     "test:watch": "jest --coverage"

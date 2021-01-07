@@ -1,3 +1,7 @@
+/**
+ * This mockup describe the result expected to array
+ * with values between 1-15.
+ */
 export const result: Array<number | string> = [
   1,
   2,
