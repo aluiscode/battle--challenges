@@ -11,12 +11,15 @@ export class ChallengePrinter implements IPlugin{
 
   public run(arr: Array<number>): void{
     arr.map( n => {
-      const eulerFizzBuzz:number = n**4 % 15;
-      if(eulerFizzBuzz === 1){
-        console.log(n);
-        return
-      }
-        console.log(this.relations.get(eulerFizzBuzz));
+      console.log(this.eulerFizzBuzz(n));
     });
+  }
+
+  public eulerFizzBuzz (n: number): number | string{
+    const eulerFizzBuzz:number = n**4 % 15;
+    if(eulerFizzBuzz === 1){
+      return n;
+    }
+    return this.relations.get(eulerFizzBuzz)
   }
 }
