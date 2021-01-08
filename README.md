@@ -17,7 +17,7 @@ operators or `else`.
 ## Testing
 ```js
   npm t
-  npm test:coverage
+  npm run test:coverage
 ```
 
 
