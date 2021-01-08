@@ -1,7 +1,13 @@
-import { Music } from './src/Music';
-import { ChallengePrinter } from './src/plugins/ChallengePrinter';
+import { ChallengesOverArrays } from './src/ChallengesOverArrays';
+import { EulerMusicalTI } from './src/plugins/EulerMusicalTI';
 
-const music = new Music({
-  end: 100,
-  plugins: [new ChallengePrinter()]
+let array: Array<number> = [];
+
+for(let i= 0; i<100; i++){
+  array[i]= i+1;
+}
+
+const music = new ChallengesOverArrays({
+  arr: array,
+  operations: [ new EulerMusicalTI ]
 });
